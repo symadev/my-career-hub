@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Root from './Component/Root/Root.jsx';
 import Home from './Component/Home/Home.jsx';
+import Dashboard from './Component/Dashboard/Dashboard.jsx';
+import Errorpage from './Component/Errorpage/Errorpage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element:<Home></Home> ,
+      },
+      {
+        path: "dashboard",
+        element:<Dashboard></Dashboard> ,
+      },
+      {
+        path: "error",
+        element:<Errorpage></Errorpage> ,
       },
     ],
   },
